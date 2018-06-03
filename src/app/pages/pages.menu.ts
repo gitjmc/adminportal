@@ -10,22 +10,22 @@ export const PAGES_MENU = [
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
-            order: 0
-          }
-        }
+            order: 0,
+          },
+        },
       },
       {
        path: 'new',  // path for our page
        data: { // custom menu declaration
          menu: {
-           title: 'New Page', // menu title
+           title: 'general.menu.new', // menu title
            icon: 'ion-android-home', // menu icon
            pathMatch: 'prefix', // use it if item children not displayed in menu
            selected: false,
            expanded: false,
-           order: 0
-         }
-       }
+           order: 0,
+         },
+       },
       },
       {
         path: 'users',  // path for our page
@@ -36,9 +36,9 @@ export const PAGES_MENU = [
             pathMatch: 'prefix', // use it if item children not displayed in menu
             selected: false,
             expanded: false,
-            order: 0
-          }
-        }
+            order: 0,
+          },
+        },
       },
       {
         path: 'editors',
@@ -49,7 +49,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 100,
-          }
+          },
         },
         children: [
           {
@@ -57,10 +57,10 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.ck_editor',
-              }
-            }
-          }
-        ]
+              },
+            },
+          },
+        ],
       },
       {
         path: 'components',
@@ -71,7 +71,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 250,
-          }
+          },
         },
         children: [
           {
@@ -79,10 +79,10 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.tree_view',
-              }
-            }
-          }
-        ]
+              },
+            },
+          },
+        ],
       },
       {
         path: 'charts',
@@ -93,7 +93,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 200,
-          }
+          },
         },
         children: [
           {
@@ -101,10 +101,10 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.chartist_js',
-              }
-            }
-          }
-        ]
+              },
+            },
+          },
+        ],
       },
       {
         path: 'ui',
@@ -115,7 +115,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 300,
-          }
+          },
         },
         children: [
           {
@@ -123,50 +123,50 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.typography',
-              }
-            }
+              },
+            },
           },
           {
             path: 'buttons',
             data: {
               menu: {
                 title: 'general.menu.buttons',
-              }
-            }
+              },
+            },
           },
           {
             path: 'icons',
             data: {
               menu: {
                 title: 'general.menu.icons',
-              }
-            }
+              },
+            },
           },
           {
             path: 'modals',
             data: {
               menu: {
                 title: 'general.menu.modals',
-              }
-            }
+              },
+            },
           },
           {
             path: 'slim',
             data: {
               menu: {
                 title: 'Slim loading bar',
-              }
-            }
+              },
+            },
           },
           {
             path: 'grid',
             data: {
               menu: {
                 title: 'general.menu.grid',
-              }
-            }
+              },
+            },
           },
-        ]
+        ],
       },
       {
         path: 'forms',
@@ -177,7 +177,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 400,
-          }
+          },
         },
         children: [
           {
@@ -185,18 +185,18 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.form_inputs',
-              }
-            }
+              },
+            },
           },
           {
             path: 'layouts',
             data: {
               menu: {
                 title: 'general.menu.form_layouts',
-              }
-            }
-          }
-        ]
+              },
+            },
+          },
+        ],
       },
       {
         path: 'tables',
@@ -207,42 +207,27 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 500,
-          }
+          },
         },
         children: [
-          {
-            path: 'basictables',
-            data: {
-              menu: {
-                title: 'general.menu.basic_tables',
-              }
-            }
-          },
           {
             path: 'smarttables',
             data: {
               menu: {
                 title: 'general.menu.smart_tables',
-              }
-            }
+              },
+            },
           },
           {
-            path: 'datatables',
+            path: 'usersaffilated',
             data: {
               menu: {
-                title: 'Data Tables',
-              }
-            }
+                title: 'general.menu.users_affilated',
+              },
+            },
           },
-           {
-             path: 'hottables',
-             data: {
-               menu: {
-                 title: 'Hot Tables',
-               }
-             }
-           }
-        ]
+
+        ],
       },
       {
         path: 'maps',
@@ -253,7 +238,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 600,
-          }
+          },
         },
         children: [
           {
@@ -261,34 +246,34 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.google_maps',
-              }
-            }
+              },
+            },
           },
           {
             path: 'leafletmaps',
             data: {
               menu: {
                 title: 'general.menu.leaflet_maps',
-              }
-            }
+              },
+            },
           },
           {
             path: 'bubblemaps',
             data: {
               menu: {
                 title: 'general.menu.bubble_maps',
-              }
-            }
+              },
+            },
           },
           {
             path: 'linemaps',
             data: {
               menu: {
                 title: 'general.menu.line_maps',
-              }
-            }
-          }
-        ]
+              },
+            },
+          },
+        ],
       },
       {
         path: '',
@@ -299,26 +284,26 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 650,
-          }
+          },
         },
         children: [
           {
             path: ['/login'],
             data: {
               menu: {
-                title: 'general.menu.login'
-              }
-            }
+                title: 'general.menu.login',
+              },
+            },
           },
           {
             path: ['/register'],
             data: {
               menu: {
-                title: 'general.menu.register'
-              }
-            }
-          }
-        ]
+                title: 'general.menu.register',
+              },
+            },
+          },
+        ],
       },
       {
         path: '',
@@ -329,7 +314,7 @@ export const PAGES_MENU = [
             selected: false,
             expanded: false,
             order: 700,
-          }
+          },
         },
         children: [
           {
@@ -337,17 +322,17 @@ export const PAGES_MENU = [
             data: {
               menu: {
                 title: 'general.menu.menu_level_1_1',
-                url: '#'
-              }
-            }
+                url: '#',
+              },
+            },
           },
           {
             path: '',
             data: {
               menu: {
                 title: 'general.menu.menu_level_1_2',
-                url: '#'
-              }
+                url: '#',
+              },
             },
             children: [
               {
@@ -355,13 +340,13 @@ export const PAGES_MENU = [
                 data: {
                   menu: {
                     title: 'general.menu.menu_level_1_2_1',
-                    url: '#'
-                  }
-                }
-              }
-            ]
-          }
-        ]
+                    url: '#',
+                  },
+                },
+              },
+            ],
+          },
+        ],
       },
       {
         path: '',
@@ -371,10 +356,10 @@ export const PAGES_MENU = [
             url: 'http://servimax.tn',
             icon: 'ion-android-exit',
             order: 800,
-            target: '_blank'
-          }
-        }
-      }
-    ]
-  }
+            target: '_blank',
+          },
+        },
+      },
+    ],
+  },
 ];
