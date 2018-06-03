@@ -20,6 +20,7 @@ import { layoutPaths } from './theme/theme.constants';
     </main>
   `
 })
+
 export class App {
 
   isMenuCollapsed: boolean = false;
