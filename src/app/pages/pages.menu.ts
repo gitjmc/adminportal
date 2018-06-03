@@ -226,6 +226,14 @@ export const PAGES_MENU = [
               },
             },
           },
+          {
+            path: 'userscompanies',
+            data: {
+              menu: {
+                title: 'general.menu.users_companies',
+              },
+            },
+          },
 
         ],
       },
