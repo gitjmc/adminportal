@@ -7,13 +7,10 @@ import { DataTableModule } from 'angular2-datatable';
 import { HttpModule } from '@angular/http';
 import { HotTable, HotTableModule } from 'ng2-handsontable';
 
-import { routing } from './users.routing';
-import { Users } from './users.component';
-
-import { UsersCustomers } from './components/usersCustomers/usersCustomers.component';
-import { UsersCustomersService } from './components/usersCustomers/usersCustomers.service';
-import { UsersAffilated } from './components/usersAffilated/usersAffilated.component';
-import { UsersAffilatedService } from './components/usersAffilated/usersAffilated.service';
+import { routing } from './transactions.routing';
+import { Transactions } from './transactions.component';
+import { TransactionsClients } from './components/transactionsClients/transactionsClients.component';
+import { TransactionsClientsService } from './components/transactionsClients/transactionsClients.service';
 
 @NgModule({
   imports: [
@@ -24,16 +21,15 @@ import { UsersAffilatedService } from './components/usersAffilated/usersAffilate
     Ng2SmartTableModule,
     DataTableModule,
     HttpModule,
+    HotTableModule,
   ],
   declarations: [
-    Users,
-    UsersCustomers,
-    UsersAffilated,
+    Transactions,
+    TransactionsClients,
   ],
   providers: [
-    UsersCustomersService,
-    UsersAffilatedService,
+    TransactionsClientsService,
   ],
 })
-export class UsersModule {
+export class TransactionsModule {
 }

@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class SmartTablesService {
@@ -11,7 +11,7 @@ export class SmartTablesService {
       username: '@mdo',
       email: 'mdo@gmail.com',
       address: '21 rue jeddah',
-      age: '28'
+      age: '28',
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export class SmartTablesService {
       username: '@fat',
       email: 'fat@yandex.ru',
       address: '9 rue jeddah',
-      age: '45'
+      age: '45',
     },
     {
       id: 3,
@@ -29,8 +29,8 @@ export class SmartTablesService {
       username: '@twitter',
       email: 'twitter@outlook.com',
       address: '10 rue jeddah',
-      age: '18'
-    }
+      age: '18',
+    },
   ];
 
   getData(): Promise<any> {

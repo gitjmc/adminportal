@@ -1,0 +1,178 @@
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class UsersCustomersService {
+
+  usersCustomersData = [
+    {
+      id: 1,
+      firstName: 'Mark',
+      lastName: 'Otto',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '21 rue jeddah',
+      age: '28',
+    },
+    {
+      id: 2,
+      firstName: 'Jacob',
+      lastName: 'Thornton',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '9 rue jeddah',
+      age: '45',
+    },
+    {
+      id: 3,
+      firstName: 'Larry',
+      lastName: 'Bird',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue jeddah',
+      age: '18',
+    },
+    {
+      id: 4,
+      firstName: 'Michel',
+      lastName: 'Glibert',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '2124 rue 20 mars',
+      age: '32',
+    },
+    {
+      id: 5,
+      firstName: 'Ali',
+      lastName: 'Ben Moussa',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '19 rue Sidi Abdessalem',
+      age: '22',
+    },
+    {
+      id: 6,
+      firstName: 'Mohamed Laroussi',
+      lastName: 'Jerbi',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue Place Ettahrir',
+      age: '44',
+    },
+    {
+      id: 1,
+      firstName: 'Mark',
+      lastName: 'Otto',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '21 rue jeddah',
+      age: '28',
+    },
+    {
+      id: 2,
+      firstName: 'Jacob',
+      lastName: 'Thornton',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '9 rue jeddah',
+      age: '45',
+    },
+    {
+      id: 3,
+      firstName: 'Larry',
+      lastName: 'Bird',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue jeddah',
+      age: '18',
+    },
+    {
+      id: 4,
+      firstName: 'Michel',
+      lastName: 'Glibert',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '2124 rue 20 mars',
+      age: '32',
+    },
+    {
+      id: 5,
+      firstName: 'Ali',
+      lastName: 'Ben Moussa',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '19 rue Sidi Abdessalem',
+      age: '22',
+    },
+    {
+      id: 6,
+      firstName: 'Mohamed Laroussi',
+      lastName: 'Jerbi',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue Place Ettahrir',
+      age: '44',
+    },
+    {
+      id: 1,
+      firstName: 'Mark',
+      lastName: 'Otto',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '21 rue jeddah',
+      age: '28',
+    },
+    {
+      id: 2,
+      firstName: 'Jacob',
+      lastName: 'Thornton',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '9 rue jeddah',
+      age: '45',
+    },
+    {
+      id: 3,
+      firstName: 'Larry',
+      lastName: 'Bird',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue jeddah',
+      age: '18',
+    },
+    {
+      id: 4,
+      firstName: 'Michel',
+      lastName: 'Glibert',
+      username: '@mdo',
+      email: 'mdo@gmail.com',
+      address: '2124 rue 20 mars',
+      age: '32',
+    },
+    {
+      id: 5,
+      firstName: 'Ali',
+      lastName: 'Ben Moussa',
+      username: '@fat',
+      email: 'fat@yandex.ru',
+      address: '19 rue Sidi Abdessalem',
+      age: '22',
+    },
+    {
+      id: 6,
+      firstName: 'Mohamed Laroussi',
+      lastName: 'Jerbi',
+      username: '@twitter',
+      email: 'twitter@outlook.com',
+      address: '10 rue Place Ettahrir',
+      age: '44',
+    },
+  ];
+
+  getData(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(this.usersCustomersData);
+      }, 2000);
+    });
+  }
+}

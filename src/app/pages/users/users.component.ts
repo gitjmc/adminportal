@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'users',
-  templateUrl: './users.html',
+  selector: 'tables',
+  template: `<router-outlet></router-outlet>`,
 })
-export class UsersComponent {
-  constructor() {}
+export class Users {
+
+  constructor() {
+  }
 }
