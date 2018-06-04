@@ -9,8 +9,11 @@ import { HotTable, HotTableModule } from 'ng2-handsontable';
 
 import { routing } from './users.routing';
 import { Users } from './users.component';
+
 import { UsersCustomers } from './components/usersCustomers/usersCustomers.component';
 import { UsersCustomersService } from './components/usersCustomers/usersCustomers.service';
+import { UsersAffilated } from './components/usersAffilated/usersAffilated.component';
+import { UsersAffilatedService } from './components/usersAffilated/usersAffilated.service';
 
 @NgModule({
   imports: [
@@ -25,9 +28,11 @@ import { UsersCustomersService } from './components/usersCustomers/usersCustomer
   declarations: [
     Users,
     UsersCustomers,
+    UsersAffilated,
   ],
   providers: [
     UsersCustomersService,
+    UsersAffilatedService,
   ],
 })
 export class UsersModule {

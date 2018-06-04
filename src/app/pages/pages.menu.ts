@@ -30,12 +30,12 @@ export const PAGES_MENU = [
             path: 'customers',
             data: {
               menu: {
-                title: 'general.menu.customers',
+                title: 'general.menu.users_customers',
               },
             },
           },
           {
-            path: 'usersaffilated',
+            path: 'affilated',
             data: {
               menu: {
                 title: 'general.menu.users_affilated',
