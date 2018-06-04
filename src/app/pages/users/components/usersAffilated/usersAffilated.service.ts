@@ -46,7 +46,7 @@ export class UsersAffilatedService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(this.usersAffilatedData);
-      }, 2000);
+      }, 1500);
     });
   }
 }
