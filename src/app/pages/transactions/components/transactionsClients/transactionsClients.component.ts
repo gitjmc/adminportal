@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
-import { SmartTablesService } from './smartTables.service';
+import { TransactionsClientsService } from './transactionsClients.service';
 import { LocalDataSource } from 'ng2-smart-table';
 
 @Component({
-  selector: 'smart-tables',
-  templateUrl: './smartTables.html',
-  styleUrls: ['./smartTables.scss']
+  selector: 'transactions-clients',
+  templateUrl: './transactionsClients.html',
+  styleUrls: ['./transactionsClients.scss'],
 })
-export class SmartTables {
+export class TransactionsClients {
 
   query: string = '';
 
@@ -25,43 +25,43 @@ export class SmartTables {
     },
     delete: {
       deleteButtonContent: '<i class="ion-trash-a"></i>',
-      confirmDelete: true
+      confirmDelete: true,
     },
     columns: {
       id: {
         title: 'ID',
-        type: 'number'
+        type: 'number',
       },
       firstName: {
         title: 'First Name',
-        type: 'string'
+        type: 'string',
       },
       lastName: {
         title: 'Last Name',
-        type: 'string'
+        type: 'string',
       },
       username: {
         title: 'Username',
-        type: 'string'
+        type: 'string',
       },
       email: {
         title: 'E-mail',
-        type: 'string'
+        type: 'string',
       },
       address: {
         title: 'Address',
-        type: 'string'
+        type: 'string',
       },
       age: {
         title: 'Age',
-        type: 'number'
-      }
-    }
+        type: 'number',
+      },
+    },
   };
 
   source: LocalDataSource = new LocalDataSource();
 
-  constructor(protected service: SmartTablesService) {
+  constructor(protected service: TransactionsClientsService) {
     this.service.getData().then((data) => {
       this.source.load(data);
     });

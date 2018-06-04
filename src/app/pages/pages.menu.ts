@@ -15,30 +15,99 @@ export const PAGES_MENU = [
         },
       },
       {
-       path: 'new',  // path for our page
+        path: 'users',
+        data: {
+          menu: {
+            title: 'general.menu.users',
+            icon: 'ion-android-person',
+            selected: false,
+            expanded: false,
+            order: 500,
+          },
+        },
+        children: [
+          {
+            path: 'customers',
+            data: {
+              menu: {
+                title: 'general.menu.customers',
+              },
+            },
+          },
+          {
+            path: 'usersaffilated',
+            data: {
+              menu: {
+                title: 'general.menu.users_affilated',
+              },
+            },
+          },
+          {
+            path: 'userscompanies',
+            data: {
+              menu: {
+                title: 'general.menu.users_companies',
+              },
+            },
+          },
+          {
+            path: 'usersall',
+            data: {
+              menu: {
+                title: 'general.menu.users_all',
+              },
+            },
+          },
+
+        ],
+      },
+      {
+       path: 'transactions',  // path for our page
        data: { // custom menu declaration
          menu: {
-           title: 'general.menu.new', // menu title
-           icon: 'ion-android-home', // menu icon
+           title: 'general.menu.transactions', // menu title
+           icon: 'ion-cash', // menu icon
            pathMatch: 'prefix', // use it if item children not displayed in menu
            selected: false,
            expanded: false,
            order: 0,
          },
        },
-      },
-      {
-        path: 'users',  // path for our page
-        data: { // custom menu declaration
-          menu: {
-            title: 'Users Page', // menu title
-            icon: 'ion-android-home', // menu icon
-            pathMatch: 'prefix', // use it if item children not displayed in menu
-            selected: false,
-            expanded: false,
-            order: 0,
-          },
-        },
+       children: [
+         {
+           path: 'transactionsclients',
+           data: {
+             menu: {
+               title: 'general.menu.transactions_clients',
+             },
+           },
+         },
+         {
+           path: 'usersaffilated',
+           data: {
+             menu: {
+               title: 'general.menu.users_affilated',
+             },
+           },
+         },
+         {
+           path: 'userscompanies',
+           data: {
+             menu: {
+               title: 'general.menu.users_companies',
+             },
+           },
+         },
+         {
+           path: 'usersall',
+           data: {
+             menu: {
+               title: 'general.menu.users_all',
+             },
+           },
+         },
+
+       ],
       },
       {
         path: 'editors',
@@ -196,45 +265,6 @@ export const PAGES_MENU = [
               },
             },
           },
-        ],
-      },
-      {
-        path: 'tables',
-        data: {
-          menu: {
-            title: 'general.menu.tables',
-            icon: 'ion-grid',
-            selected: false,
-            expanded: false,
-            order: 500,
-          },
-        },
-        children: [
-          {
-            path: 'smarttables',
-            data: {
-              menu: {
-                title: 'general.menu.smart_tables',
-              },
-            },
-          },
-          {
-            path: 'usersaffilated',
-            data: {
-              menu: {
-                title: 'general.menu.users_affilated',
-              },
-            },
-          },
-          {
-            path: 'userscompanies',
-            data: {
-              menu: {
-                title: 'general.menu.users_companies',
-              },
-            },
-          },
-
         ],
       },
       {

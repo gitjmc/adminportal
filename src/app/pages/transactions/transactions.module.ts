@@ -7,10 +7,10 @@ import { DataTableModule } from 'angular2-datatable';
 import { HttpModule } from '@angular/http';
 import { HotTable, HotTableModule } from 'ng2-handsontable';
 
-import { routing } from './users.routing';
-import { Users } from './users.component';
-import { UsersCustomers } from './components/usersCustomers/usersCustomers.component';
-import { UsersCustomersService } from './components/usersCustomers/usersCustomers.service';
+import { routing } from './transactions.routing';
+import { Transactions } from './transactions.component';
+import { TransactionsClients } from './components/transactionsClients/transactionsClients.component';
+import { TransactionsClientsService } from './components/transactionsClients/transactionsClients.service';
 
 @NgModule({
   imports: [
@@ -21,14 +21,15 @@ import { UsersCustomersService } from './components/usersCustomers/usersCustomer
     Ng2SmartTableModule,
     DataTableModule,
     HttpModule,
+    HotTableModule,
   ],
   declarations: [
-    Users,
-    UsersCustomers,
+    Transactions,
+    TransactionsClients,
   ],
   providers: [
-    UsersCustomersService,
+    TransactionsClientsService,
   ],
 })
-export class UsersModule {
+export class TransactionsModule {
 }

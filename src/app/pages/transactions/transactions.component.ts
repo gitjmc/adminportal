@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'tables',
+  selector: 'transactions',
   template: `<router-outlet></router-outlet>`,
 })
-export class Tables {
+export class Transactions {
 
   constructor() {
   }
