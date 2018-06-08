@@ -29,34 +29,82 @@ export class UsersAffilated {
       confirmDelete: true,
     },
     columns: {
-      id: {
+      compContactId: {
         title: 'ID',
         type: 'number',
       },
-      companyName: {
-        title: 'Companie',
+      persId: {
+        title: 'persID',
+        type: 'number',
+      },
+      firstname: {
+        title: 'Prenom',
         type: 'string',
       },
-      contact: {
-        title: 'Contact',
+      lastname: {
+        title: 'Nom',
         type: 'string',
       },
       phone: {
-        title: 'Téléphone',
-        type: 'number',
-      },
-      fax: {
-        title: 'Fax',
+        title: 'Tél',
         type: 'number',
       },
       email: {
         title: 'Email',
         type: 'string',
       },
-      address: {
-        title: 'Adresse',
+      compId: {
+        title: 'compID',
+        type: 'number',
+      },
+      name: {
+        title: 'Nom',
         type: 'string',
       },
+      phoneCompany: {
+        title: 'Tél',
+        type: 'number',
+      },
+      compTypeId: {
+        title: 'compTId',
+        type: 'number',
+      },
+      compType: {
+        title: 'Type',
+        type: 'string',
+      },
+/*      account: {
+        title: '#account',
+        type: 'number',
+      },
+      balance: {
+        title: 'Balance',
+        type: 'number',
+      },
+      userId: {
+        title: '#user',
+        type: 'number',
+      },
+      username: {
+        title: 'Username',
+        type: 'string',
+      },
+      accountTypeId: {
+        title: '#type',
+        type: 'number',
+      },
+      type: {
+        title: 'Type',
+        type: 'string',
+      },
+      compId: {
+        title: '#cie',
+        type: 'number',
+      },
+      name: {
+        title: 'Nom',
+        type: 'string',
+      },*/
     },
   };
 

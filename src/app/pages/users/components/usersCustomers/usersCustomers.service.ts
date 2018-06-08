@@ -11,7 +11,7 @@ export class UsersCustomersService {
       username: '@mdo',
       email: 'mdo@gmail.com',
       address: '21 rue jeddah',
-      age: '28',
+      age: 28,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export class UsersCustomersService {
       username: '@fat',
       email: 'fat@yandex.ru',
       address: '9 rue jeddah',
-      age: '45',
+      age: 45,
     },
     {
       id: 3,
